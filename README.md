@@ -9,9 +9,9 @@ Zadanie z wykorzystaniem telefonu.
 
 Sprawdzenie prawa Biot-Savarta:
 
-Wczytać dane z akcelerometrów i magnetometru do pythona
-Ustalic polozenie magnetometru w telefonie
-Wyswietlic wykres
-Zcalkowac wyniki z akcelerometrow aby uzyskac polozenie telefonu w funkcji czasu
-Dokonac pomiaru indukcji pola magnetycznego przemieszczajac telefon wzdluz osi Helmholtza
-Sprawdzic wyniki eksperyemntalne z teoretycznymi.
+- Wczytać dane z akcelerometrów i magnetometru do pythona
+- Ustalic polozenie magnetometru w telefonie
+- Wyswietlic wykres
+- Zcalkowac wyniki z akcelerometrow aby uzyskac polozenie telefonu w funkcji czasu
+- Dokonac pomiaru indukcji pola magnetycznego przemieszczajac telefon wzdluz osi Helmholtza
+- Sprawdzic wyniki eksperyemntalne z teoretycznymi.
