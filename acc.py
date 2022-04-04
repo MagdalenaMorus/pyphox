@@ -1,7 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-ACC_PATH = 'Raw Data.csv'
+
+ACC_PATH = 'data/Raw Data.csv'
 df = pd.read_csv(ACC_PATH)
 df = df[df.columns[1]]
 print(df)
