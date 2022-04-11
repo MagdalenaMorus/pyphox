@@ -18,7 +18,17 @@ def print_single_plot(column):
     plt.show()
 
 
+def integrate(a, t):
+    delta_t = 0.001
+    integral = 0
+    integrals_list = []
+    for i in range(len(t)):
+        trapeze = (a[i] + a[i+1])*(delta_t/2)
+        integral = integral + trapeze
+        integrals_list[i] = integral
+    print(integrals_list)
+
+
 if __name__ == '__main__':
     x, y, z, t = load_data(ACC_PATH)
-    print_single_plot(x)
-    dbg_stp = 5
+    integrate(x, t)
