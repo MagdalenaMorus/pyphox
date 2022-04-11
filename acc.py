@@ -21,14 +21,15 @@ def print_single_plot(column):
 def integrate(a, t):
     delta_t = 0.001
     integral = 0
-    integrals_list = []
-    for i in range(len(t)):
-        trapeze = (a[i] + a[i+1])*(delta_t/2)
+    integrals_list = [0.0]
+    for i in range(1, len(t)):
+        trapeze = (a[i-1] + a[i])*(delta_t/2)
         integral = integral + trapeze
-        integrals_list[i] = integral
-    print(integrals_list)
+        integrals_list.append(integral)
+    return integrals_list
 
 
 if __name__ == '__main__':
     x, y, z, t = load_data(ACC_PATH)
-    integrate(x, t)
+    integration = integrate(x, t)
+    print_single_plot(integration)
